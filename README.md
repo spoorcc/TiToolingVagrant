@@ -1,7 +1,7 @@
 
-# ULP - distributable development environment
+# Distributable development environment for TI CCs
 
-This setup will create a common development environment for TI MSP430.
+This setup will create a common development environment for TI Code Composer Studio.
 
 Vagrant is used to manage Virtualbox 
 
@@ -25,4 +25,3 @@ In order to generate a new options file run the following command:
 # /tmp/CCS7.3.0.00019_linux-x64/ccs_setup_linux64_7.3.0.00019.bin  --save-response-file /vagrant/my_install_options.txt --skip-install true
 ```
 This will run the installer and save all the settings in `my_install_options.txt`
-
