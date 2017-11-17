@@ -11,8 +11,8 @@ Vagrant is used to manage Virtualbox
 * [Virtualbox Extension pack](https://www.virtualbox.org/wiki/Downloads) : Extension pack needed for interacting with USB devices
 
 ### Needed vagrant plugins
-* [vagrant reload plugin](https://github.com/aidanns/vagrant-reload)
-* [vagrant plugin vbguest] (Plugin to make sure guest-additions is the same in guest as in host for solving sharing folders)
+* [vagrant reload plugin](https://github.com/aidanns/vagrant-reload) : Plugin to restart vm during provisioning
+* [vagrant plugin vbguest](https://github.com/dotless-de/vagrant-vbguest) :Plugin to make sure guest-additions is the same in guest as in host for solving sharing folders
 
 ```
 vagrant plugin install vagrant-vbguest
