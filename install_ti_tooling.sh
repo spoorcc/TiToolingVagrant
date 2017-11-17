@@ -21,7 +21,7 @@ tar -xzvf /tmp/CCS7.3.0.00019_linux-x64.tar.gz -C /tmp
 # To generate a new options file use:
 # /tmp/CCS7.3.0.00019_linux-x64/ccs_setup_linux64_7.3.0.00019.bin  --save-response-file /vagrant/my_install_options.txt --skip-install true
 echo "Installing Code Composer 7"
-/tmp/CCS7.3.0.00019_linux-x64/ccs_setup_linux64_7.3.0.00019.bin --response-file /vagrant/ccsv7_install_options.txt
+/tmp/CCS7.3.0.00019_linux-x64/ccs_setup_linux64_7.3.0.00019.bin --response-file /vagrant/ccsv7_install_options.txt --mode unattended
 
 echo "Installing drivers"
 /opt/ti/ccsv7/install_scripts/install_drivers.sh
