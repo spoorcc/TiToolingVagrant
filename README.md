@@ -20,6 +20,7 @@ vagrant plugin install vagrant-reload
 ```
 ## Usage
 
+### Creating / Starting machine for first time
 * Clone/download this repository:
 
 ```git clone https://github.com/spoorcc/TiToolingVagrant```
@@ -35,10 +36,15 @@ vagrant plugin install vagrant-reload
 * A virtualbox VM will be created and all tooling downloaded and installed. Note: this can take more than ~90 minutes on slower systems.
 * After that the machine can be used from either commandline or virtualbox directly.
 
+### Destroying the machine
+Since the configuration is all kept in source files, the machine can be destroyed at any time and recreated completly.
+
+* From command line run: ```vagrant destroy```
+
 # CCS install options
 CCS is installed with a certain set of options according to a "response file".
-In order to generate a new options file run the following command:
+In order to generate a new options file run the following command from within a VM:
 ```
 # /tmp/CCS7.3.0.00019_linux-x64/ccs_setup_linux64_7.3.0.00019.bin  --save-response-file /vagrant/my_install_options.txt --skip-install true
 ```
-This will run the installer and save all the settings in `my_install_options.txt`
+This will run the installer and save all the settings in `my_install_options.txt`. This can replace the currently used install file.
