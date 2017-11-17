@@ -18,6 +18,23 @@ Vagrant is used to manage Virtualbox
 vagrant plugin install vagrant-vbguest
 vagrant plugin install vagrant-reload
 ```
+## Usage
+
+* Clone/download this repository:
+
+```git clone https://github.com/spoorcc/TiToolingVagrant```
+
+* Go into the directory
+
+``` cd TiToolingVagrant ```
+
+* Start the VM (first time needs to be done from commandline)
+
+``` vagrant up ```
+
+* A virtualbox VM will be created and all tooling downloaded and installed. Note: this can take more than ~90 minutes on slower systems.
+* After that the machine can be used from either commandline or virtualbox directly.
+
 # CCS install options
 CCS is installed with a certain set of options according to a "response file".
 In order to generate a new options file run the following command:
